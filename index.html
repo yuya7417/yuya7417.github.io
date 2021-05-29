@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Yuya's Portfolio</title>
   <link rel="stylesheet" href="stylesheet.css">
+  <link rel="stylesheet" href="responsive.css">
   <link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100&display=swap" rel="stylesheet">
 <link rel="icon" href="favicon.ico">
@@ -13,27 +14,26 @@
 </head>
 <body>
 
-  <header>
-    <h1 class="name" id="top">Yuya Takeda</h1>
-
+  <div class="header">
+    <h1 class="name" id="top">Yuya's Portfolio</h1>
     <div class="header-right">
       <ul>
         <li><a href="#top">TOP</a></li>
         <li><a href="#about">About</a></li>
+        <li><a href="#skils">Skils</a></li>
         <li><a href="#works">Works</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
     </div>
-
     <span class="material-icons" id="open">menu</span>
-
-  </header>
+  </div>
   
   <div class="sp-menu">
    <span class="material-icons" id="close">close</span>
     <ul>
       <li><a href="#top">TOP</a></li>
       <li><a href="#about">About</a></li>
+      <li><a href="#skils">Skils</a></li>
       <li><a href="#works">Works</a></li>
       <li><a href="#contact">Contact</a></li>
     </ul>
@@ -44,11 +44,13 @@
   <div class="about" id="about">
     <h2 class="title">About</h2>
     <div class="container">
-      <img src="" class="myphoto">
-      <div class="text">
-        <p>武田　勇哉　　Takeda Yuya</p>
-        <p>石川県出身。富山県立大学電子・情報工学科卒業。Web業界で仕事をしたいと考え、Web制作を学んでいます。毎日の仕事の傍ら、日々勉強中です。ものづくりを通して人に喜んでもらうこと、お役に立てることを目指しています。</p>
-      </div>
+        <div class="myphoto">
+          <img src="MyPhoto.jpg" >
+        </div>
+        <div class="text">
+          <h1>Yuya Takeda</h1>
+          <p>石川県出身。富山県立大学　電子・情報工学科卒業。<br>Web業界で仕事をしたいと考え、Web制作を学んでいます。毎日の仕事の傍ら、日々勉強中です。ものづくりを通して人に喜んでもらうこと、お役に立てることを目指しています。</p>
+        </div>
     </div>
   </div>
 
@@ -69,7 +71,6 @@
     <h2 class="title">Works</h2>
     <p>JavaScriptを用いて開発したミニアプリです。</p>
     <div class="container">
-
       <div class="works-contents">
         <div class="omikuji">
           <div id="btn">?</div>
@@ -85,9 +86,7 @@
           </div>
           <p>ストップウォッチ</p>
          </div>
-
       </div>
-
     </div>
   </div>
 
