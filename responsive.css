@@ -75,9 +75,17 @@ table {
     display:none;
   }
 
+  .sp-menu{
+    width:100%;
+  }
+
 }
 
 @media(max-width:1000px){
+  .header{
+    width:100%;
+  }
+
   .container{
     width:80%;
   }
@@ -123,7 +131,6 @@ table {
     margin-bottom:30px;
     transform:translateY(16px);
     transition:transform .3s;
-    
   }
 
   .sp-menu a{
