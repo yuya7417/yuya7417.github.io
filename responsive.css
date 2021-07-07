@@ -98,20 +98,6 @@ table {
     padding-left:40px;
   }
 
-  .sp-menu{
-    position:fixed;
-    top: 0;
-    bottom: 0;
-    right: 0;
-    left: 0;
-    background:rgba(255,255,255,0.95);
-    padding-top:180px;
-    text-align:center;
-    opacity:0;
-    pointer-events:none;
-    transition:opacity .6s;
-  }
-
   #open{
    font-size:32px;
     position:absolute;
@@ -125,6 +111,20 @@ table {
     position:absolute;
     right:40px;
     top:80px;
+  }
+
+  .sp-menu{
+    position:fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background:rgba(255,255,255,0.95);
+    padding-top:180px;
+    text-align:center;
+    opacity:0;
+    pointer-events:none;
+    transition:opacity .6s;
   }
 
   .sp-menu li{
@@ -142,12 +142,12 @@ table {
     text-decoration:underline;
   }
 
-  .show{
+  .sp-menu.show{
     opacity:1;
     pointer-events:auto;
   }
 
-  .hide{
+  .sp-menu.hide{
     opacity:0;
   }
 
