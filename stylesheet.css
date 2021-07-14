@@ -54,7 +54,7 @@ a{
   text-decoration:none;
 }
 
-.header{
+header{
   display:flex;
   justify-content:space-between;
   padding-top:80px;
@@ -71,19 +71,77 @@ a{
   line-height:36px;
 }
 
-.header ul{
+header ul{
   display:flex;
 }
 
-.header a{
+header a{
   font-size:14px;
   margin-left:60px;
   color:black;
 }
 
-.header a:hover{
+header a:hover{
   text-decoration:underline;
 }
+
+.sp-menu{
+  position:fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background:rgba(255,255,255,0.95);
+  padding-top:180px;
+  text-align:center;
+  opacity:0;
+  pointer-events:none;
+  transition:opacity .6s;
+}
+.sp-menu li{
+  margin-bottom:30px;
+  transform:translateY(16px);
+  transition:transform .3s;
+  font-size:18px;
+}
+
+.sp-menu a{
+  color:black;
+}
+
+.sp-menu a:hover{
+  text-decoration:underline;
+}
+
+.sp-menu.show{
+  opacity:1;
+  pointer-events:auto;
+}
+
+.sp-menu.show li{
+  opacity:1;
+  transform:none;
+}
+
+#open{
+  font-size:32px;
+  position:absolute;
+  right:40px;
+  cursor:pointer;
+}
+
+#close{
+  font-size:32px;
+  cursor:pointer;
+  position:absolute;
+  right:40px;
+  top:80px;
+}
+
+#open.hide{
+  opacity:0;
+}
+
 
 .top-photo{
   width:100%;
@@ -149,10 +207,6 @@ a{
 
 .works p{
   text-align:center;
-}
-
-.inactive{
-  opacity:0.6;
 }
 
 .contact{

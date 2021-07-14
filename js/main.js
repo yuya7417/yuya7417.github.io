@@ -5,8 +5,7 @@
   const open = document.getElementById('open');
   const spmenu = document.querySelector('.sp-menu');
   const close = document.getElementById('close');
-  const splist = document.querySelectorAll('.list');
-
+  const list = document.querySelectorAll('.sp-menu a');
 
   open.addEventListener('click', () => {
     spmenu.classList.add('show');
@@ -18,8 +17,8 @@
     open.classList.remove('hide');
   });
 
-  splist.forEach((list) => {
-    list.addEventListener('click', () => {
+  list.forEach((a) => {
+    a.addEventListener('click', () => {
       spmenu.classList.remove('show');
       open.classList.remove('hide');
     })
