@@ -3,6 +3,10 @@
     width:80%;
   }
 
+  header{
+    width:100%;
+  }
+
   .header-right{
     display:none;
   }
