@@ -7,22 +7,23 @@
   <title>Yuya's Portfolio</title>
   <link rel="stylesheet" href="stylesheet.css">
   <link rel="stylesheet" href="responsive.css">
+  <link rel="icon" href="img/favicon.ico">
   <link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Lato:wght@100&display=swap" rel="stylesheet">
-<link rel="icon" href="img/favicon.ico">
-<link href="https://fonts.googleapis.com/icon?family=Material+Icons"rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons"rel="stylesheet">
 </head>
 
 <body>
+<div id="app">
 
   <header>
     <h1 class="name">Yuya's Portfolio</h1>
     <div class="header-right">
       <ul>
-        <li><a href="#about">About</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#works">Works</a></li>
-        <li><a href="#contact">Contact</a></li>
+        <li><a v-smooth-scroll href="#about">About</a></li>
+        <li><a v-smooth-scroll href="#skills">Skills</a></li>
+        <li><a v-smooth-scroll href="#works">Works</a></li>
+        <li><a v-smooth-scroll href="#contact">Contact</a></li>
       </ul>
     </div>
     <span class="material-icons" id="open">menu</span>
@@ -31,49 +32,43 @@
   <div class="sp-menu">
    <span class="material-icons" id="close">close</span>
     <ul>
-      <li><a href="#about">About</a></li>
-      <li><a href="#skills">Skills</a></li>
-      <li><a href="#works">Works</a></li>
-      <li><a href="#contact">Contact</a></li>
+      <li><a v-smooth-scroll href="#about">About</a></li>
+      <li><a v-smooth-scroll href="#skills">Skills</a></li>
+      <li><a v-smooth-scroll href="#works">Works</a></li>
+      <li><a v-smooth-scroll href="#contact">Contact</a></li>
     </ul>
   </div>
 
-  <img class="top-photo" src="img/top-photo.jpg">
-
-
-  <div class="about" id="about">
+  <div id="about">
     <h2 class="title">About</h2>
     <div class="container">
         <div class="myphoto">
           <img src="img/MyPhoto.jpg" >
         </div>
-        <div class="text">
-          <h1>Yuya Takeda</h1>
-          <p>石川県出身。富山県立大学　電子・情報工学科卒業。<br>Web業界で仕事をしたいと考え、Web制作を学んでいます。毎日の仕事の傍ら、日々勉強中です。ものづくりを通して人に喜んでもらうこと、お役に立てることを目指しています。</p>
-        </div>
+        <h1>Yuya Takeda</h1>
+        <p>石川県出身。富山県立大学　電子・情報工学科卒業。<br>Web業界で仕事をしたいと考え、Web開発を学んでいます。毎日の仕事の傍ら、日々勉強中です。ものづくりを通して人に喜んでもらうこと、お役に立てることを目指しています。</p>
     </div>
   </div>
 
-  <div class="skills" id="skills">
+  <div id="skills">
     <h2 class="title">Skills</h2>
     <div class="container">
-      <div class="skill-text">
+      <div class="text">
         <p>HTML:★★★★☆</p>
         <br>
         <p>CSS:★★★★☆</p>
         <br>
-        <p>JavaScript:★★☆☆☆</p>
+        <p>JavaScript:★★★★☆</p>
       </div>
     </div>
   </div>
 
-  <div class="works" id="works">
+  <div id="works">
     <h2 class="title">Works</h2>
     <p>現在制作中です。</p>
-   
   </div>
 
-  <div class="contact" id="contact">
+  <div id="contact">
     <h2 class="title">Contact</h2>
     <div class="container">
       <p>用件がありましたら、こちらのメールアドレスからお願いします。改めてご返信いたします。</p>
@@ -86,15 +81,21 @@
     <div class="footer-left">
       <div class="container">
         <ul>
-          <li><a href="#about">About</a></li>
-          <li><a href="#works">Works</a></li>
-          <li><a href="#skills">Skills</a></li>
-          <li><a href="#contact">Contact</a></li>
+          <li><a v-smooth-scroll href="#about">About</a></li>
+          <li><a v-smooth-scroll href="#works">Works</a></li>
+          <li><a v-smooth-scroll href="#skills">Skills</a></li>
+          <li><a v-smooth-scroll href="#contact">Contact</a></li>
         </ul>
       </div>
     </div>
   </footer>
 
-  <script src="js/main.js"></script>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/vue-smooth-scroll@1.0.13/dist/vue-smooth-scroll.min.js"></script>
+<script src="js/Vue.js"></script>
+<script src="js/main.js"></script>
+
 </body>
 </html>
